@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap");
+body {
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+  font-family: Nunito Sans, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.nav-links a {
+  color: dimgrey;
+  font-family: Nunito Sans;
+  padding: 0px 24px;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #9c69e2;
+  font-weight: bold;
+}
+.ssignupcta {
+  width: 312px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding-left: 16px;
+  padding-top: 8px;
+  margin-right: 60px;
+}
+.ssignupcta input {
+  border: none;
+  outline: none;
+  padding-right: 190;
+  padding-top: 2px;
+}
+.ssignupcta svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 1228px;
+  top: 20px;
+}
+.Landing-Cta {
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+.Landing-Cta img {
+  width: 70%;
+}
+.toggle-collapse {
+  width: 45px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: #252327;
+  border-radius: 5px;
+  display: none;
+}
+.toggle-collapse:hover {
+  color: #ffffff;
+  background-color: #9c69e2;
+}
+.animated {
+  animation: slideInLeft 0.7s ease-in;
+}
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@keyframes SlideMe {
+  0% {
+    transform: skewX(53) translateX(-500);
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+.landing-info {
+  margin-left: 64px;
+}
+.landing-info h1 {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 110%;
+  top: 203px;
+  align-items: center;
+  margin: 32px 0px;
+}
+.landing-info p {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+}
+.textbutton {
+  background: #ffffff;
+  box-shadow: -4px 4px 10px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding: 8px 16px;
+  height: 45px;
+  width: 355px;
+}
+.textbutton input {
+  border: none;
+  outline: none;
+  padding-left: 16px;
+  padding-top: 2px;
+}
+.textbutton button {
+  position: absolute;
+  background: #9c69e2;
+  border-radius: 50px;
+  color: #ffffff;
+  height: 45px;
+  top: 355px;
+  left: 430px;
+  padding: 8px 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px 12px;
+}
+.textbutton button:hover {
+  background-color: #f6fafd;
+  color: #9c69e2;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service h2 {
+  text-align: center;
+  font-style: normal;
+  margin: 36px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.service p {
+  width: 584px;
+  text-align: center;
+  padding-bottom: 64px;
+}
+.servicesProp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.service1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 24px;
+}
+.services1txt h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.services1txt p {
+  width: 250px;
+}
+.containers {
+  position: absolute;
+  left: 290px;
+  width: 322px;
+  height: 260.58px;
+  background: #f2c94c;
+  opacity: 0.1;
+  border-radius: 50px;
+  transform: skewX(-7deg);
+  margin-bottom: 36px;
+}
+.service2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 64px;
+  margin-left: 24px;
+
+}
+.services2txt h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.services2txt p {
+  width: 200px;
+}
+.containers1 {
+  position: absolute;
+  left: 880px;
+  width: 322px;
+  height: 260.58px;
+  background: #2d9cdb;
+  opacity: 0.1;
+  border-radius: 50px;
+  border-bottom-left-radius: 30px;
+  transform: skewX(-7deg);
+  margin-bottom: 36px;
+}
+.servicesProp2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+.whyCarl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 80px;
+}
+.whyChooseCarl {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 130%;
+  margin-top: 90px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.whyCarl h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 130%;
+}
+.whyCarl p {
+  width: 200px;
+  font-size: 14px;
+}
+.whyCarl img {
+  margin-top: 36px;
+  justify-content: center;
+}
+
+.teamate {
+  width: 200;
+  text-align: center;
+  font-size: 20px;
+  margin: 64px 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.teamuser1 {
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  width: 250px;
+  height: 213px;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 30px;
+  box-shadow: -4px 4px 10px rgba(75, 93, 104, 0.1);
+  margin-top: 30px;
+  border: 1px solid #9c69e2;
+}
+.imgpath {
+  width: 120px;
+  background-image: url(../assets/naheem.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.imgpath1{
+  width: 120px;
+  background-image: url(../assets/tee.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.teamuser2 {
+  display: flex;
+  width: 250px;
+  height: 213px;
+  flex-direction: row;
+  padding: 24px;
+  background-color: white;
+  margin-left: 30px;
+  border-radius: 20px;
+  box-shadow: -4px 4px 10px rgba(75, 93, 104, 0.1);
+  margin-top: 30px;
+  border: 1px solid #9c69e2;
+}
+.teamuser3 {
+  display: flex;
+  width: 250px;
+  height: 213px;
+  flex-direction: row;
+  padding: 24px;
+  background-color: white;
+  margin-left: 30px;
+  border-radius: 20px;
+  box-shadow: -4px 4px 10px rgba(75, 93, 104, 0.1);
+  margin-top: 30px;
+  border: 1px solid #9c69e2;
+}
+.teamvalues h3 {
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.teamvalues p {
+  margin-top: 8px;
+  color: gray;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 160%;
+}
+
+.update-bg {
+  background-color: #f5ecfe;
+  padding-top: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.rectangleDiv1 {
+  background-color: #9c69e2;
+  height: 7px;
+  margin-top: 64px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.updateTxt {
+  font-weight: bold;
+  color: #212353;
+  font-size: 30px;
+  margin-top: 70px;
+  margin-left: 64px;
+}
+
+.ssignupcta2 {
+  width: 300px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 50px;
+  padding-left: 16px;
+  padding-top: 8px;
+  margin-left: 64px;
+}
+
+input[id="update"] {
+  border: none;
+  outline: none;
+  opacity: 0.6;
+  padding-right: 30px;
+  padding-top: 2px;
+}
+
+.update-iphone {
+  width: 100%;
+  height: 100%;
+  padding-right: 100px;
+  float: right;
+}
+.getInTouchbody {
+  background-color: #f5ecfe;
+  margin-top: 56px;
+  height: 520px;
+  size: 100%;
+}
+
+.getInTouchTxt {
+  color: #9c69e2;
+  padding: 25px;
+  font-weight: bold;
+}
+.rectangleDiv2 {
+  background-color: #9c69e2;
+  height: 80px;
+}
+
+input[name="info"],
+textarea {
+  width: 85%;
+  font-size: small;
+  opacity: 0.5;
+  padding: 10px;
+  border: 1px solid #9c69e2;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #9c69e2;
+  color: white;
+  padding: 6px 40px;
+  border: none;
+  border-radius: 7px;
+  margin-left: 48%;
+}
+
+input[type="submit"]:hover {
+  background-color: #b292e2;
+}
+
+.containerForm {
+  border-radius: 15px;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+}
+
+@media (max-width: 457px) {
+  *{
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+  }
+  .ssignupcta {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-links a {
+    display: block;
+    font-size: 18px;
+  }
+  .toggle-collapse {
+    display: inline-block;
+  }
+  .Landing-Cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing-info h1 {
+    display: block;
+    font-size: 38px;
+    font-weight: bold;
+  }
+  .Landing-Cta img {
+    width: 90vw;
+  }
+  .landing-info {
+    margin-left: 24px;
+  }
+  .landing-info p{
+    width: 300px;
+  }
+  .textbutton{
+    display: block;
+    width: 300px;
+  }
+  .textbutton button {
+    position: absolute;
+    top: 420px;
+    left: 120px;
+  }
+  .servicesProp {
+    display: block;
+  }
+  .service h2 {
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .service p {
+    width: 250px;
+    font-size: 14px;
+  }
+  .servicesProp h4 {
+    font-size: 14px;
+  }
+  .servicesProp p {
+    width: 160px;
+    font-size: 12px;
+  }
+  .containers {
+    width: 230px;
+    height: 200px;
+    left: 80px;
+  }
+  .containers1 {
+    width: 230px;
+    height: 200px;
+    left: 80px;
+  }
+  .service1{
+    margin-left: 0px;
+  }
+  .service2 {
+    margin-top: 60px;
+  }
+  .whyCarl {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+  }
+  .teamate h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .ssignupcta2{
+    width: 250px;
+    
+  }
+  .updateTxt {
+    font-weight: bold;
+    color: #212353;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-left: 64px;
+  }
+  
+}
