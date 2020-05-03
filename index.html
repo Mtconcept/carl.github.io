@@ -19,22 +19,24 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbaritems">
         <div class="logoprop">
-            <img src="" alt="logo here" class="logo">
+            <a href=""><img src="./assets/carl logo.png" alt="logo here" class="logo" ></a>
         </div>
         <div class="nav-links">
             <a href="#services">Services</a>
-            <a href="#">Why Carl</a>
-            <a href="#">Team</a>
-            <a href="#">Contact</a>
+            <a href="#whyCarlmain">Why Carl</a>
+            <a href="#teamate">Team</a>
+            <a href="#getInTouchbody">Contact</a>
         </div>
-        <div class="ssignupcta">
-            <input type="text" id="updates" placeholder="Sign-up for Update">
-            <a href=""><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21 8L15 15M21 8L15 1M21 8L1 8" stroke="#9C69E2" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg></a>
+        <div class="ssignupcta form">
+            <form action="https://formspree.io/xknqnjwn" method="POST">
+            <input type="email" name="_replyto" id="updates" placeholder="Sign-up for Update" required>
+            <button><svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 8L15 15M21 8L15 1M21 8L1 8" stroke="#9C69E2" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg></button>
+        </form>
         </div>
         <button class="toggle-collapse">
             <i class="fa fa-align-justify" aria-hidden="true"></i>
@@ -48,8 +50,10 @@
             <p>Join the Community of beta users get notified
                 when we launch and be the first to test our live products </p>
             <div class="textbutton">
-                <input type="text" name="Sign-up" id="updates" placeholder=" Sign up for update">
-                <button type="submit">Update Me</button>
+                <form action="https://formspree.io/xknqnjwn" method="POST" id="signUpUser">
+                <input type="email" name="_replyto" id="updates" placeholder=" Sign up for update" required>
+               <button type="submit">Update Me</button>
+            </form>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="9.04505in" height="4.24201in"
@@ -1189,7 +1193,7 @@
         </div>
     </section>
 
-    <section class="whyCarlmain">
+    <section class="whyCarlmain" id="whyCarlmain">
         <!-- why carl -->
         <h1 class="whyChooseCarl">Reason you would love this</h1>
         <div class="whyCarl">
@@ -1233,12 +1237,14 @@
 
                 <h2 class="updateTxt">Be The First To Recieve<br> An Update On Arrival</h2><br>
                 <div class="ssignupcta2">
-                    <input type="text" id="update" placeholder="Sign-up for Update">
-                    <a href=""><svg width="20" height="15" viewBox="0 0 22 16" fill="none"
+                    <form action="" method="post">
+                    <input type="email" id="update" placeholder="Sign-up for Update"  required>
+                    <button><svg width="20" height="15" viewBox="0 0 22 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M21 8L15 15M21 8L15 1M21 8L1 8" stroke="#9C69E2" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></a>
+                        </svg></button>
+                    </form>
                 </div>
 
             </div>
@@ -1253,7 +1259,7 @@
 
     <section>
         <!-- meet team -->
-        <div class="teamate">
+        <div class="teamate" id="teamate">
             <h2>Meet the Team</h2>
         </div>
         <div class="team">
@@ -1309,7 +1315,7 @@
 
     <section>
         <!-- get in touch -->
-        <div class="getInTouchbody">
+        <div class="getInTouchbody" id="getInTouchbody">
             <h4 class="text-center getInTouchTxt">Get in touch</h4>
 
 
@@ -1319,10 +1325,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class="containerForm">
-                        <form class="text-center">
-                            <input type="text" name="info" id="name" placeholder=" Full name">
-                            <input type="text" name="info" id="email" placeholder="Email Address">
-                            <textarea type="text" name="info" id="comment" placeholder="Type your message ..."
+                        <form class="text-center" action="https://formspree.io/xknqnjwn"method="POST">
+                            <input type="text" name="name" id="name" placeholder=" Full name">
+                            <input type="email" name="_replyto" id="email" placeholder="Email Address">
+                            <textarea type="text" name="message" id="comment" placeholder="Type your message ..."
                                 style="height: 130px;"></textarea>
                             <br>
                             <input type="submit" value="Send">
@@ -1338,8 +1344,32 @@
         </div>
     </section>
 
-    <footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
 
+
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCa22uwEqLZDVci9rlIF_aKHYnboYpx-Jw",
+    authDomain: "carl-fb07a.firebaseapp.com",
+    databaseURL: "https://carl-fb07a.firebaseio.com",
+    projectId: "carl-fb07a",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+// reference auth and db 
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+</script>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -1352,6 +1382,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+            <script src="auth.js"></script>
+            <script src="main.js"></script>
 </body>
 
 </html>

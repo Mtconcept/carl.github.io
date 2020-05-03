@@ -6,13 +6,19 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
-.navbar {
+.navbaritems {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin: 30px 46px;
   align-items: baseline;
 }
+.nav-links{
+  display: flex;
+  flex-direction: row;
+}
 .nav-links a {
+  width: 120px;
   color: dimgrey;
   font-family: Nunito Sans;
   padding: 0px 24px;
@@ -22,6 +28,10 @@ body {
   color: #9c69e2;
   font-weight: bold;
 }
+.logoprop img{
+  width: 50px;
+}
+
 .ssignupcta {
   width: 312px;
   height: 40px;
@@ -42,8 +52,13 @@ body {
   position: absolute;
   width: 20px;
   height: 20px;
-  left: 1228px;
-  top: 20px;
+  left: 1116px;
+  top: 39px;
+}
+.ssignupcta button{
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 .Landing-Cta {
   display: flex;
@@ -129,18 +144,15 @@ body {
   padding-top: 2px;
 }
 .textbutton button {
-  position: absolute;
   background: #9c69e2;
   border-radius: 50px;
   color: #ffffff;
   height: 45px;
-  top: 355px;
-  left: 430px;
-  padding: 8px 24px;
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 0px 12px;
+  padding: 0px 8px;
+  float: right;
 }
 .textbutton button:hover {
   background-color: #f6fafd;
@@ -368,7 +380,7 @@ body {
 }
 
 .ssignupcta2 {
-  width: 300px;
+  width: 350px;
   height: 40px;
   background: #ffffff;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
@@ -377,12 +389,17 @@ body {
   padding-top: 8px;
   margin-left: 64px;
 }
+.ssignupcta2 button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
 
 input[id="update"] {
   border: none;
   outline: none;
   opacity: 0.6;
-  padding-right: 30px;
+  padding-right: 16x;
   padding-top: 2px;
 }
 
@@ -459,6 +476,9 @@ input[type="submit"]:hover {
   .nav-links {
     display: none;
   }
+  .navbaritems{
+    margin: 30px 0px;
+  }
   .nav-links a {
     display: block;
     font-size: 18px;
@@ -480,7 +500,7 @@ input[type="submit"]:hover {
     width: 90vw;
   }
   .landing-info {
-    margin-left: 24px;
+    margin-left: 16px;
   }
   .landing-info p{
     width: 300px;
@@ -514,14 +534,14 @@ input[type="submit"]:hover {
     font-size: 12px;
   }
   .containers {
-    width: 230px;
+    width: 280px;
     height: 200px;
-    left: 80px;
+    left: 30px;
   }
   .containers1 {
-    width: 230px;
+    width: 280px;
     height: 200px;
-    left: 80px;
+    left: 30px;
   }
   .service1{
     margin-left: 0px;
@@ -532,6 +552,11 @@ input[type="submit"]:hover {
   .whyCarl {
     display: flex;
     flex-direction: column;
+    margin-left: 30px;
+  }
+  .whyChooseCarl{
+    width: 250px;
+    text-align: center;
     margin-left: 30px;
   }
   .teamate h2 {
