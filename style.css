@@ -287,7 +287,7 @@ body {
 }
 .imgpath {
   width: 120px;
-  background-image: url(../assets/naheem.jpg);
+  background-image: url(assets/naheem.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -297,7 +297,7 @@ body {
 }
 .imgpath1{
   width: 120px;
-  background-image: url(../assets/tee.jpg);
+  background-image: url(assets/tee.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -305,6 +305,19 @@ body {
   border-radius: 50%;
   margin-right: 16px;
 }
+
+.imgpath2{
+  width: 120px;
+  background-image: url(assets/syndee.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+
 .teamuser2 {
   display: flex;
   width: 250px;
