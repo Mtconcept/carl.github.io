@@ -317,6 +317,28 @@ body {
   margin-right: 16px;
 }
 
+.imgpath3{
+  width: 120px;
+  background-image: url(assets/Joel.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.imgpath4{
+  width: 120px;
+  background-image: url(assets/Josh.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
 
 .teamuser2 {
   display: flex;
