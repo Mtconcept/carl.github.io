@@ -13,7 +13,7 @@ body {
   margin: 30px 46px;
   align-items: baseline;
 }
-.nav-links{
+.nav-links {
   display: flex;
   flex-direction: row;
 }
@@ -28,7 +28,7 @@ body {
   color: #9c69e2;
   font-weight: bold;
 }
-.logoprop img{
+.logoprop img {
   width: 50px;
 }
 
@@ -55,7 +55,7 @@ body {
   left: 1116px;
   top: 39px;
 }
-.ssignupcta button{
+.ssignupcta button {
   background-color: transparent;
   outline: none;
   border: none;
@@ -211,7 +211,6 @@ body {
   align-items: center;
   margin-bottom: 64px;
   margin-left: 24px;
-
 }
 .services2txt h4 {
   font-size: 20px;
@@ -261,7 +260,7 @@ body {
   line-height: 130%;
 }
 .whyCarl p {
-  width: 200px;
+  width: 280px;
   font-size: 14px;
 }
 .whyCarl img {
@@ -287,19 +286,19 @@ body {
 .teamuser1 {
   display: flex;
   flex-direction: row;
-  padding: 24px;
+  padding: 10px;
   width: 250px;
   height: 213px;
   background-color: white;
   border-radius: 20px;
-  margin-left: 30px;
+  margin: auto;
   box-shadow: -4px 4px 10px rgba(75, 93, 104, 0.1);
   margin-top: 30px;
   border: 1px solid #9c69e2;
 }
 .imgpath {
   width: 120px;
-  background-image: url(../assets/naheem.jpg);
+  background-image: url(assets/naheem.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -307,9 +306,9 @@ body {
   border-radius: 50%;
   margin-right: 16px;
 }
-.imgpath1{
+.imgpath1 {
   width: 120px;
-  background-image: url(../assets/tee.jpg);
+  background-image: url(assets/tee.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -317,14 +316,48 @@ body {
   border-radius: 50%;
   margin-right: 16px;
 }
+
+.imgpath2 {
+  width: 120px;
+  background-image: url(assets/syndee.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.imgpath3 {
+  width: 120px;
+  background-image: url(assets/Joel.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.imgpath4 {
+  width: 120px;
+  background-image: url(assets/Josh.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
 .teamuser2 {
   display: flex;
   width: 250px;
   height: 213px;
   flex-direction: row;
-  padding: 24px;
+  padding: 16px;
   background-color: white;
-  margin-left: 30px;
+  margin: auto;
   border-radius: 20px;
   box-shadow: -4px 4px 10px rgba(75, 93, 104, 0.1);
   margin-top: 30px;
@@ -335,9 +368,9 @@ body {
   width: 250px;
   height: 213px;
   flex-direction: row;
-  padding: 24px;
+  padding: 16px;
   background-color: white;
-  margin-left: 30px;
+  margin: auto;
   border-radius: 20px;
   box-shadow: -4px 4px 10px rgba(75, 93, 104, 0.1);
   margin-top: 30px;
@@ -349,7 +382,7 @@ body {
   font-size: 18px;
 }
 .teamvalues p {
-  margin-top: 8px;
+  margin-top: 6px;
   color: gray;
   font-weight: 300;
   font-size: 12px;
@@ -389,7 +422,7 @@ body {
   padding-top: 8px;
   margin-left: 64px;
 }
-.ssignupcta2 button{
+.ssignupcta2 button {
   background-color: transparent;
   outline: none;
   border: none;
@@ -459,23 +492,24 @@ input[type="submit"]:hover {
   align-items: center;
   padding: 25px;
   width: 100%;
+  justify-content: center;
 }
-#backdrop{
+#backdrop {
   display: none;
   background-color: #000000;
   opacity: 0.2;
   width: 100%;
   height: 100%;
 }
-#toggle{
+#toggle {
   display: none;
 }
-#mobileNav{
+#mobileNav {
   display: none;
 }
 
 @media (max-width: 457px) {
-  *{
+  * {
     overflow-x: hidden;
   }
   body {
@@ -483,90 +517,94 @@ input[type="submit"]:hover {
     box-sizing: border-box;
     background-size: cover;
   }
-  
-  
-  #menu{
-	width: 35px;
-	height: 30px;
-	margin: 30px 0 20px 20px;
-	cursor: pointer;
-}
-.bar{
-	height: 5px;
-	width: 100%;
-	background-color: #b81568;
-	display: block;
-	border-radius: 5px;
-	transition: 0.3s ease;
-}
-#bar1{
-	transform: translateY(-4px);
-}
-#bar3{
-	transform: translateY(4px);
-}
-.nav li a{
-	color: #fff;
-	text-decoration: none;
-}
-.nav li a:hover{
-	font-weight: bold;
-}
-.nav li{
-	list-style: none;
-	padding: 16px 0;
-}
-.nav{
-	padding: 0;
-	margin: 0 20px;
-	transition: 0.3s ease;
-	display: none;
-}
-.menu-bg, #menu-bar{
-	top: 0;
-	left: 0;
-	position: absolute;
-}
-.menu-bg{
-	width: 0;
-	height: 0;
-	margin: 30px 0 20px 20px;
-	background: radial-gradient(circle,#e94498,#b81568);
-	border-radius: 50%;
-	transition: 0.3s ease;
-}
-#menu-bar{
-	z-index: 2;	
-}
-.change-bg{
-	width: 550px;
-	height: 540px;
-	transform: translate(-60%,-30%);
-}
-.change .bar{
-	background-color: white;
-}
-.change #bar1{
-	transform: translateY(4px) rotateZ(-45deg);
-}
-.change #bar3{
-	transform: translateY(-6px) rotate(45deg);
-}
-.change #bar2{
-	opacity: 0;
-}
-.change{
-	display: block;
-}
-  .nav-links{
-    display: none;
-
+  #mobileNav {
+    display: block;
   }
   
+ #menu {
+   display: block;
+    width: 35px;
+    height: 30px;
+    margin: 40px 0 20px 20px;
+    cursor: pointer;
+    
+  }
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  #bar3 {
+    transform: translateY(4px);
+  }
+  .nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  .nav li {
+    list-style: none;
+    padding: 16px 0;
+  }
+  .nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+  }
+  .menu-bg,
+  #menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  .menu-bg {
+    width: 0;
+    height: 0;
+    margin: 50px 0 20px 20px;
+    background-color: plum;
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  #menu-bar {
+    z-index: 2;
+  }
+  .change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+  }
+  .change .bar {
+    background-color: white;
+  }
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  .change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+  }
+  .change #bar2 {
+    opacity: 0;
+  }
+  .change {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+
   .ssignupcta {
     display: none;
   }
-  .navbaritems{
+  .navbaritems {
     margin: 30px 0px;
   }
   .nav-links a {
@@ -592,10 +630,10 @@ input[type="submit"]:hover {
   .landing-info {
     margin-left: 16px;
   }
-  .landing-info p{
+  .landing-info p {
     width: 300px;
   }
-  .textbutton{
+  .textbutton {
     display: block;
     width: 300px;
   }
@@ -618,22 +656,23 @@ input[type="submit"]:hover {
   }
   .servicesProp h4 {
     font-size: 14px;
+    scroll-behavior: none;
   }
   .servicesProp p {
     width: 160px;
     font-size: 12px;
   }
   .containers {
-    width: 280px;
+    width: 300px;
     height: 200px;
     left: 30px;
   }
   .containers1 {
-    width: 280px;
+    width: 300px;
     height: 200px;
     left: 30px;
   }
-  .service1{
+  .service1 {
     margin-left: 0px;
   }
   .service2 {
@@ -644,10 +683,10 @@ input[type="submit"]:hover {
     flex-direction: column;
     margin-left: 30px;
   }
-  .whyChooseCarl{
+  .whyChooseCarl {
     width: 250px;
     text-align: center;
-    margin-left: 30px;
+    margin: auto;
   }
   .teamate h2 {
     font-size: 20px;
@@ -657,9 +696,8 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
   }
-  .ssignupcta2{
+  .ssignupcta2 {
     width: 250px;
-    
   }
   .updateTxt {
     font-weight: bold;
@@ -668,5 +706,4 @@ input[type="submit"]:hover {
     margin-top: 70px;
     margin-left: 64px;
   }
-  
 }
