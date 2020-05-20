@@ -459,7 +459,21 @@ input[id="update"] {
   height: 80px;
 }
 
-input[name="info"],
+input[name="name"],
+textarea {
+  width: 85%;
+  font-size: small;
+  opacity: 0.5;
+  padding: 10px;
+  border: 1px solid #9c69e2;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[id="emailAddress"],
 textarea {
   width: 85%;
   font-size: small;
