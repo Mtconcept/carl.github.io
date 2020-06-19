@@ -586,7 +586,7 @@ input[type="submit"]:hover {
     margin: 50px 0 20px 20px;
     background-color: plum;
     border-radius: 50%;
-    transition: 0.2s ease;
+    transition: 0.1s ease;
   }
   #menu-bar {
     z-index: 2;
