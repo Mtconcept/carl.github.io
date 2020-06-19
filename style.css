@@ -676,15 +676,18 @@ input[type="submit"]:hover {
     width: 160px;
     font-size: 12px;
   }
+  .services2txt h4{
+    margin-top: 10px;
+  }
   .containers {
     width: 300px;
     height: 200px;
-    left: 30px;
+    left: 65px;
   }
   .containers1 {
     width: 300px;
     height: 200px;
-    left: 30px;
+    left: 60px;
   }
   .service1 {
     margin-left: 0px;
